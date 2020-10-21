@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Dictionary">
+   <children>
+      <GridPane prefHeight="602.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="249.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="547.0" minWidth="10.0" prefWidth="451.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="47.0" prefWidth="249.0">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/search-glyph-black-icon-png_293805.jpg" />
+                           </image></ImageView>
+                        <Label blendMode="SRC_ATOP" prefHeight="48.0" prefWidth="208.0" text="    SEARCH BOX" textAlignment="CENTER" textFill="#4614eb" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="textField" onAction="#searchOnAction" prefHeight="52.0" prefWidth="205.0" />
+                  <ListView fx:id="listView" onEditStart="#pressArrow" prefHeight="548.0" prefWidth="249.0" />
+               </children>
+            </VBox>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <WebView fx:id="webView" prefHeight="579.0" prefWidth="451.0" />
+                  <Pane>
+                     <children>
+                        <ImageView fx:id="speaker" fitHeight="51.0" fitWidth="48.0" layoutX="396.0" layoutY="17.0" onMouseClicked="#clickOnSpeaker" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/loa1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="addImage" fitHeight="50.0" fitWidth="56.0" layoutX="324.0" layoutY="6.0" onMouseClicked="#clickOnAddImage" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/logo-sach(57).jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

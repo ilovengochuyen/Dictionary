@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Edit_Controller">
+    <children>
+        <HBox prefHeight="41.0" prefWidth="700.0">
+            <children>
+                <TextField fx:id="text1" alignment="CENTER" prefHeight="41.0" prefWidth="180.0" text="Word">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+                <TextField fx:id="data1" prefHeight="41.0" prefWidth="457.0">
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Times New Roman" size="22.0" />
+                    </font>
+                </TextField>
+            </children>
+            <VBox.margin>
+                <Insets left="50.0" top="30.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox prefHeight="41.0" prefWidth="700.0">
+            <children>
+                <TextField fx:id="text2" alignment="CENTER" prefHeight="41.0" prefWidth="180.0" text="Pronunciation">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+                <TextField fx:id="data2" prefHeight="41.0" prefWidth="456.0">
+                    <font>
+                        <Font name="Times New Roman" size="22.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <VBox.margin>
+                <Insets left="50.0" top="20.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox prefHeight="41.0" prefWidth="700.0">
+            <children>
+                <TextField fx:id="text3" alignment="CENTER" prefHeight="41.0" prefWidth="180.0" text=" Word_Type">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+                <TextField fx:id="data3" prefHeight="41.0" prefWidth="457.0">
+                    <font>
+                        <Font name="Times New Roman" size="22.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets left="50.0" top="20.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox prefHeight="288.0" prefWidth="650.0">
+            <children>
+                <TextField fx:id="text4" alignment="CENTER" prefHeight="246.0" prefWidth="180.0" text="Definition">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+                <TextArea fx:id="data4" prefHeight="62.0" prefWidth="454.0">
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Times New Roman" size="22.0" />
+                    </font>
+                </TextArea>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets left="50.0" top="20.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox prefHeight="54.0" prefWidth="548.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#addButtonAction" text="Add" textFill="#222020">
+                    <font>
+                        <Font name="Times New Roman" size="25.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="100.0" />
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#removeButtonAction" text="Remove" textFill="#141414">
+                    <font>
+                        <Font name="Times New Roman" size="25.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <padding>
+                <Insets left="200.0" top="20.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>
